@@ -3,7 +3,6 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 const Page = async () => {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
-  console.log(user);
   if (!user) {
     return (
       <div className="min-h-screen mt-20 text-center">
