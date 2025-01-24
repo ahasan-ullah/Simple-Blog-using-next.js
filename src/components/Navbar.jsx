@@ -6,7 +6,7 @@ const Navbar = async () => {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
   return (
-    <div className="navbar bg-base-200 fixed top-0 max-w-7xl mx-auto pr-8 z-10">
+    <div className="navbar bg-base-200 fixed top-0 max-w-7xl mx-auto z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
