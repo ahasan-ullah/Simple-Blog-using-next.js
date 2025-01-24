@@ -1,3 +1,4 @@
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -46,7 +47,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link href="/login" className="btn btn-neutral">Login</Link>
+        <LoginLink className="btn btn-neutral">Login</LoginLink>
       </div>
     </div>
   );
