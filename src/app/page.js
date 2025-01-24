@@ -18,7 +18,7 @@ const page = async () => {
                   : post.body}
               </p>
               <div className="card-actions justify-end">
-                <Link href={`/blog/${post.id}`} className="btn btn-neutral">Read More</Link>
+                <Link href={`blog/${post.id}`} className="btn btn-neutral">Read More</Link>
               </div>
             </div>
           </div>

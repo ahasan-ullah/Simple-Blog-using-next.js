@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const page = async ({ params }) => {
-  const { id } = params;
+  const { id } = await params;
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
   const post = await res.json();
 
@@ -17,7 +17,7 @@ const page = async ({ params }) => {
   }
 
   return (
-    <div className=" p-6 min-h-screen flex flex-col items-center justify-center">
+    <div className=" p-6 min-h-screen flex flex-col items-center justify-center mt-20">
       <div className="max-w-3xl mx-auto bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl shadow-lg text-white">
         <div className="card-body p-8">
           <h1 className="card-title text-4xl font-extrabold mb-6">
