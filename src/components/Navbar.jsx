@@ -1,4 +1,4 @@
-import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import { LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import Link from "next/link";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
@@ -52,9 +52,9 @@ const Navbar = async () => {
 
       {user ? (
         <div className="navbar-end">
-          <Link href={"/api/auth/logout"} className="btn btn-neutral">
+          <LogoutLink className="btn btn-neutral">
             Logout
-          </Link>
+          </LogoutLink>
         </div>
       ) : (
         <div className="navbar-end">
